@@ -6,7 +6,7 @@
 /*   By: corellan <corellan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 11:09:09 by corellan          #+#    #+#             */
-/*   Updated: 2023/07/10 17:26:10 by corellan         ###   ########.fr       */
+/*   Updated: 2023/07/10 22:29:22 by corellan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-# define SIZE 4
+# ifndef SIZE
+#  define SIZE 4
+# endif
 
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *str, int fd);
