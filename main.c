@@ -6,7 +6,7 @@
 /*   By: corellan <corellan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/09 09:58:59 by corellan          #+#    #+#             */
-/*   Updated: 2023/07/09 22:29:40 by corellan         ###   ########.fr       */
+/*   Updated: 2023/07/10 17:22:43 by corellan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	main_cont(int **map, int **clues, char **split)
 	else
 		ft_putstr_fd("No solution found\n", 2);
 	ft_free_split(split);
-	ft_free_int_ar(clues, SIZE);
+	ft_free_int_ar(clues, 4);
 	ft_free_int_ar(map, SIZE);
 	return (0);
 }
